@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: center;
+}
+nav h3 {
+  font-size: 22px;
+  cursor: pointer;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+nav p {
+  transition: all 0.3s;
+  margin-left: 20px;
+}
+nav div p:hover {
+  color: #777;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url(../assets/user4.jpg);
+  background-size: cover;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid #e7e7e7;
+  outline: 1px solid #fff;
+}
+.profile-holder p {
+  font-weight: 600;
+}
+.profile-holder {
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  padding: 0 10px;
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 112%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.dropdown ul {
+  list-style: none;
+  width: 100%;
+  /* text-align: center; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.dropdown ul li {
+  border-bottom: 1px solid #eee;
+  padding: 15px 30px;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(247, 248, 250);
+  margin-top: 3px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  /* display: none; */
+}
+
+.search-box-holder {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#search-box {
+  padding: 13px 20px;
+  width: 600px;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.btn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.5px);
+}
+#search-box:focus {
+  border-bottom: 3px solid #55c57a;
+}
+.result-box {
+  width: 650px;
+  height: 700px;
+  margin: 40px auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  position: relative;
+}
+.watermark {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #666;
+}
+.footer {
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666;
+}
